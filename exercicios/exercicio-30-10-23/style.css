@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+  background-repeat: no-repeat;
+  font-weight: 900;
+}
+
+span{
+  color:blueviolet;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+  width: 100%;
+  min-height: 92.9vh;
+  background-color: center;
+  background-size: cover;
+  padding: 2px 10%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo{
+  width: 240px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 1000;
+}
+
+nav ul li a:hover{
+  color: #11a5aa;
+}
+
+.login-btn{
+  color: #333;
+  text-decoration: none;
+  font-weight: 800;
+  margin-right: 15px;
+}
+
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 40px;
+  color: beige;
+  background-image: linear-gradient(45deg, #012910, #289184);
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: .5s;
+}
+.content{
+  margin-top: 10%;
+  max-width: 300px;
+}
+
+.content h1{
+  font-size: 70px;
+  color: #222;
+}
+
+.content p{
+  padding: 10px 60px;
+  font-size: large;
+}
+
+.content .btn{
+  padding: 15px 60px;
+  font-size: 16px;
+  animation-delay: 1s;
+}
+
+.btn:hover{
+  border-top-right-radius: 30px;
+}
+
+.drum-img{
+  width:730px;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  top: 20%;
+}
+
+.drum-img .animation{
+  animation-delay: 1.5s;
+}
+
+.animation{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+footer{
+  background-image: linear-gradient(45deg, #0f0f0f, #202525);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer p{
+  font-size: 16px;
+  margin-bottom: 10px;
+}

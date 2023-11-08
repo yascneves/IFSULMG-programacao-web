@@ -29,17 +29,14 @@ nav ul {
 }
 
 nav ul li {
-  width: 150px;
+  width: 120px;
   margin: 15px;
-  margin-top: 0px;
   padding: 15px;
 }
 
 nav ul li a {
   color: rgb(222, 212, 231);
   text-decoration: none;
-  display: block;
-  position: absolute;
 }
 
 nav ul li:hover .sub-menu-1 {
@@ -62,4 +59,20 @@ nav ul li:hover .sub-menu-1 ul li {
   text-align: center;
   border-radius: 10px;
   transition: 0.75;
+}
+
+nav ul li:hover .sub-menu-1 ul li:hover{
+  background-color: #201139;
+}
+
+.sub-menu-2{
+  display: none;
+}
+
+.hover-sub:hover .sub-menu-2{
+  display:block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color:#171717;
 }
